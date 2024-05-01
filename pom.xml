@@ -44,6 +44,11 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
@@ -71,20 +76,10 @@
                     </execution>
                 </executions>
             </plugin>
+
+
         </plugins>
     </build>
-    <build>
-        <plugins>
-            <!-- Other plugins -->
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
-            </plugin>
-
-            <!-- Other plugins -->
-        </plugins>
-    </build>
 
 </project>
